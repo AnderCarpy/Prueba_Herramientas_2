@@ -1,0 +1,13 @@
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\bin\Debug\net8.0\GestionTarea.ApiConsumer.deps.json
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\bin\Debug\net8.0\GestionTarea.ApiConsumer.dll
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\bin\Debug\net8.0\GestionTarea.ApiConsumer.pdb
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\obj\Debug\net8.0\GestionTarea.ApiConsumer.csproj.AssemblyReference.cache
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\obj\Debug\net8.0\GestionTarea.ApiConsumer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\obj\Debug\net8.0\GestionTarea.ApiConsumer.AssemblyInfoInputs.cache
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\obj\Debug\net8.0\GestionTarea.ApiConsumer.AssemblyInfo.cs
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\obj\Debug\net8.0\GestionTarea.ApiConsumer.csproj.CoreCompileInputs.cache
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\obj\Debug\net8.0\GestionTarea.ApiConsumer.sourcelink.json
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\obj\Debug\net8.0\GestionTarea.ApiConsumer.dll
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\obj\Debug\net8.0\refint\GestionTarea.ApiConsumer.dll
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\obj\Debug\net8.0\GestionTarea.ApiConsumer.pdb
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTarea.ApiConsumer\obj\Debug\net8.0\ref\GestionTarea.ApiConsumer.dll

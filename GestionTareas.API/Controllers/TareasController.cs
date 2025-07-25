@@ -1,83 +1,65 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Dapper;
+using GestionTareas.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using System.Data.Common;
+
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace GestionTareas.API.Controllers
 {
-    public class TareasController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class TareasController : ControllerBase
+
     {
-        // GET: TareasController
-        public ActionResult Index()
+
+        private DbConnection conexion;
+
+        public TareasController(IConfiguration configuration)
         {
-            return View();
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            conexion = new SqlConnection(connectionString);
+        }
+        // GET: api/<TareasController>
+        [HttpGet]
+        public IEnumerable<Tarea> Get()
+        {
+            var tarea = conexion.Query<Tarea>("SELECT * FROM Tarea").ToList();
+            return tarea;
         }
 
-        // GET: TareasController/Details/5
-        public ActionResult Details(int id)
+        // GET api/<TareasController>/5
+        [HttpGet("{id}")]
+        public Tarea Get(int id)
         {
-            return View();
+            var tarea = conexion.QuerySingle<Tarea>("SELECT * FROM Tarea WHERE Id = @Id", new { Id = id });
+            return tarea;
         }
 
-        // GET: TareasController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: TareasController/Create
+        // POST api/<TareasController>
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public Tarea Post([FromBody]Tarea tarea)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            conexion.Execute("INSERT INTO Tarea (Nombre, Descripcion,FechaInicio,FechaFin,EquipoId,ProyectoId, UsuarioId) VALUES (@Nombre,@Descripcion,@FechaInicio,@FechaFin, @ProyectoId, @UsuarioId)", tarea);
+            tarea.Id = conexion.QuerySingle<int>("SELECT SCOPE_IDENTITY()");
+            return tarea;
         }
 
-        // GET: TareasController/Edit/5
-        public ActionResult Edit(int id)
+        // PUT api/<TareasController>/5
+        [HttpPut("{id}")]
+        public Tarea Put(int id, [FromBody]Tarea tarea)
         {
-            return View();
+            conexion.Execute("UPDATE Tarea SET Nombre = @Nombre WHERE Id = @Id", new { Nombre = tarea.Nombre, Id = id });
+            return tarea;
+
         }
 
-        // POST: TareasController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        // DELETE api/<TareasController>/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: TareasController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: TareasController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            conexion.Execute("DELETE FROM Tarea WHERE Id = @Id", new { Id = id });
         }
     }
 }

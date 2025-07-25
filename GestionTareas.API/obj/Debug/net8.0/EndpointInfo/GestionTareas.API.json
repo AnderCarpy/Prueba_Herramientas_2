@@ -349,30 +349,249 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Proyecto"
               }
             },
             "text/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Proyecto"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Proyecto"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Proyecto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Proyecto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Proyecto"
+                }
+              }
+            }
           }
         }
       },
       "delete": {
         "tags": [
           "Proyectos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Tareas": {
+      "get": {
+        "tags": [
+          "Tareas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Tarea"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Tarea"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Tarea"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Tareas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tarea"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tarea"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tarea"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tarea"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tarea"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tarea"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Tareas/{id}": {
+      "get": {
+        "tags": [
+          "Tareas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tarea"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tarea"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tarea"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Tareas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tarea"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tarea"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Tarea"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tarea"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tarea"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Tarea"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Tareas"
         ],
         "parameters": [
           {
@@ -405,7 +624,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/Usuario"
                   }
                 }
               },
@@ -413,7 +632,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/Usuario"
                   }
                 }
               },
@@ -421,7 +640,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/components/schemas/Usuario"
                   }
                 }
               }
@@ -437,24 +656,41 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Usuario"
               }
             },
             "text/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Usuario"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Usuario"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              }
+            }
           }
         }
       }
@@ -481,17 +717,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "string"
+                  "$ref": "#/components/schemas/Usuario"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "string"
+                  "$ref": "#/components/schemas/Usuario"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "string"
+                  "$ref": "#/components/schemas/Usuario"
                 }
               }
             }
@@ -517,24 +753,41 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Usuario"
               }
             },
             "text/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Usuario"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/Usuario"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              }
+            }
           }
         }
       },
@@ -756,11 +1009,13 @@
           },
           "tareaId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "equipoId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "tareasAsignadas": {
             "type": "array",

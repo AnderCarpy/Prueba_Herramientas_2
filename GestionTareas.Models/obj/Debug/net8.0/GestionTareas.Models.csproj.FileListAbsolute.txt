@@ -9,3 +9,4 @@ C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasP
 C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\refint\GestionTareas.Models.dll
 C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\GestionTareas.Models.pdb
 C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\ref\GestionTareas.Models.dll
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\GestionTareas.Models.sourcelink.json
