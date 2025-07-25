@@ -22,6 +22,7 @@ namespace GestionTareas.API.Controllers
         [HttpGet]
         public IEnumerable<Equipo> Get()
         {
+
             var equipo = conexion.Query<Equipo>("SELECT * FROM Equipos").ToList();
             return equipo;
         }
@@ -38,7 +39,14 @@ namespace GestionTareas.API.Controllers
         [HttpPost]
         public Equipo Post([FromBody] Equipo equipo)
         {
-            conexion.Execute("INSERT INTO Equipos (Nombre, ProyectoId, UsuarioId) VALUES (@Nombre, @ProyectoId, @UsuarioId)", equipo);
+
+            conexion.Execute("INSERT INTO Equipos (Nombre, UsuarioId) VALUES (@Nombre, @UsuarioId)",
+                           new
+                           {
+                               equipo.Nombre,
+                               equipo.UsuarioId
+                           });
+
             equipo.Id = conexion.QuerySingle<int>("SELECT SCOPE_IDENTITY()");
             return equipo;
         }
@@ -47,7 +55,14 @@ namespace GestionTareas.API.Controllers
         [HttpPut("{id}")]
         public Equipo Put(int id, [FromBody] Equipo equipo)
         {
-            conexion.Execute("UPDATE Equipos SET Nombre = @Nombre WHERE Id = @Id", new { Nombre = equipo.Nombre, Id = id });
+
+            conexion.Execute("UPDATE Equipos SET Nombre = @Nombre, ProyectoId = @ProyectoId, UsuarioId = @UsuarioId WHERE Id = @Id",
+                           new
+                           {
+                               Nombre = equipo.Nombre,
+                               equipo.UsuarioId,
+                               Id = id
+                           });
             return equipo;
         }
 
@@ -57,7 +72,5 @@ namespace GestionTareas.API.Controllers
         {
             conexion.Execute("DELETE FROM Equipos WHERE Id = @Id", new { Id = id });
         }
-
-      
     }
 }

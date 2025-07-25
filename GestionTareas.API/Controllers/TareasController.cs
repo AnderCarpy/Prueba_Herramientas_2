@@ -11,9 +11,7 @@ namespace GestionTareas.API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class TareasController : ControllerBase
-
     {
-
         private DbConnection conexion;
 
         public TareasController(IConfiguration configuration)
@@ -21,6 +19,7 @@ namespace GestionTareas.API.Controllers
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             conexion = new SqlConnection(connectionString);
         }
+
         // GET: api/<TareasController>
         [HttpGet]
         public IEnumerable<Tarea> Get()
@@ -39,20 +38,39 @@ namespace GestionTareas.API.Controllers
 
         // POST api/<TareasController>
         [HttpPost]
-        public Tarea Post([FromBody]Tarea tarea)
+        public Tarea Post([FromBody] Tarea tarea)
         {
-            conexion.Execute("INSERT INTO Tarea (Nombre, Descripcion,FechaInicio,FechaFin,EquipoId,ProyectoId, UsuarioId) VALUES (@Nombre,@Descripcion,@FechaInicio,@FechaFin, @ProyectoId, @UsuarioId)", tarea);
+            
+            conexion.Execute(@"INSERT INTO Tarea (Nombre, Descripcion, FechaInicio, FechaFin, EquipoId, ProyectoId, UsuarioId) 
+                              VALUES (@Nombre, @Descripcion, @FechaInicio, @FechaFin, @EquipoId, @ProyectoId, @UsuarioId)",
+                              new
+                              {
+                                  tarea.Nombre,
+                                  Descripcion = tarea.Descripcion,
+                                  tarea.FechaInicio,
+                                  tarea.FechaFin,
+                                  tarea.EquipoId,
+                                  tarea.ProyectoId,
+                                  tarea.UsuarioId
+                              });
+
             tarea.Id = conexion.QuerySingle<int>("SELECT SCOPE_IDENTITY()");
             return tarea;
         }
 
         // PUT api/<TareasController>/5
         [HttpPut("{id}")]
-        public Tarea Put(int id, [FromBody]Tarea tarea)
+        public Tarea Put(int id, [FromBody] Tarea tarea)
         {
-            conexion.Execute("UPDATE Tarea SET Nombre = @Nombre WHERE Id = @Id", new { Nombre = tarea.Nombre, Id = id });
+            
+            conexion.Execute("UPDATE Tarea SET Nombre = @Nombre, Descripcion = @Descripcion WHERE Id = @Id",
+                           new
+                           {
+                               Nombre = tarea.Nombre,
+                               Descripcion = tarea.Descripcion,
+                               Id = id
+                           });
             return tarea;
-
         }
 
         // DELETE api/<TareasController>/5

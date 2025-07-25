@@ -13,13 +13,13 @@ namespace GestionTareas.API.Controllers
     public class ProyectosController : ControllerBase
     {
         private DbConnection conexion;
+
         public ProyectosController(IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             conexion = new SqlConnection(connectionString);
-
-
         }
+
         // GET: api/<ProyectosController>
         [HttpGet]
         public IEnumerable<Proyecto> Get()
@@ -38,19 +38,48 @@ namespace GestionTareas.API.Controllers
 
         // POST api/<ProyectosController>
         [HttpPost]
-        public Proyecto Post([FromBody]Proyecto proyecto)
+        public Proyecto Post([FromBody] Proyecto proyecto)
         {
-            conexion.Execute("INSERT INTO Proyecto (Nombre, TareaId,UsuarioId) VALUES (@Nombre,@TareaId,@UsuarioId)", proyecto);
+            
+            conexion.Execute(@"INSERT INTO Proyecto (Nombre, Descripcion, FechaInicio, FechaFin, EquipoId, UsuarioId) 
+                              VALUES (@Nombre, @Descripcion, @FechaInicio, @FechaFin, @EquipoId, @UsuarioId)",
+                              new
+                              {
+                                  proyecto.Nombre,
+                                  Descripcion = proyecto.Descripcion,
+                                  proyecto.FechaInicio,
+                                  proyecto.FechaFin,
+                                  proyecto.EquipoId,
+                                  proyecto.UsuarioId
+                              });
+
             proyecto.Id = conexion.QuerySingle<int>("SELECT SCOPE_IDENTITY()");
             return proyecto;
         }
 
-
         // PUT api/<ProyectosController>/5
         [HttpPut("{id}")]
-        public Proyecto Put(int id, [FromBody]Proyecto proyecto)
+        public Proyecto Put(int id, [FromBody] Proyecto proyecto)
         {
-            conexion.Execute("UPDATE Proyecto SET Nombre = @Nombre, Descripcion =@Descripcion, WHERE Id = @Id", new { Nombre = proyecto.Nombre, Id = id });
+            
+            conexion.Execute(@"UPDATE Proyecto SET 
+                              Nombre = @Nombre, 
+                              Descripcion = @Descripcion, 
+                              FechaInicio = @FechaInicio, 
+                              FechaFin = @FechaFin, 
+                              EquipoId = @EquipoId, 
+                              UsuarioId = @UsuarioId 
+                              WHERE Id = @Id",
+                           new
+                           {
+                               Nombre = proyecto.Nombre,
+                               Descripcion = proyecto.Descripcion,
+                               proyecto.FechaInicio,
+                               proyecto.FechaFin,
+                               proyecto.EquipoId,
+                               proyecto.UsuarioId,
+                               Id = id
+                           });
             return proyecto;
         }
 

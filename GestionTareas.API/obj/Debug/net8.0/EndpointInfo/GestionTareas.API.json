@@ -868,11 +868,13 @@
           },
           "proyectoId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "usuarioId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "miembros": {
             "type": "array",
@@ -883,6 +885,16 @@
           },
           "proyecto": {
             "$ref": "#/components/schemas/Proyecto"
+          },
+          "lider": {
+            "$ref": "#/components/schemas/Usuario"
+          },
+          "tareas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tarea"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -898,7 +910,7 @@
             "type": "string",
             "nullable": true
           },
-          "descripción": {
+          "descripcion": {
             "type": "string",
             "nullable": true
           },
@@ -913,11 +925,18 @@
           },
           "tareaId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "equipoId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           },
           "tareas": {
             "type": "array",
@@ -943,7 +962,7 @@
             "type": "string",
             "nullable": true
           },
-          "descripción": {
+          "descripcion": {
             "type": "string",
             "nullable": true
           },
@@ -958,15 +977,18 @@
           },
           "usuarioId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "proyectoId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "equipoId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "usuariosAsignados": {
             "type": "array",

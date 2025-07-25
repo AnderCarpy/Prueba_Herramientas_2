@@ -12,11 +12,12 @@ namespace GestionTareas.Models
        
         public string Nombre { get; set; }
 
-        public int ProyectoId { get; set; }
-        public int UsuarioId { get; set; }
+        public int? ProyectoId { get; set; }
+        public int? UsuarioId { get; set; }
 
         public List<Usuario>? Miembros { get; set; }
-
         public Proyecto? Proyecto { get; set; }
+        public Usuario? Lider { get; set; }
+        public List<Tarea>? Tareas { get; set; }
     }
 }

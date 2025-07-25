@@ -4,8 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using System.Data.Common;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace GestionTareas.API.Controllers
 {
     [Route("api/[controller]")]
@@ -19,11 +17,12 @@ namespace GestionTareas.API.Controllers
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             conexion = new SqlConnection(connectionString);
         }
+
         // GET: api/<UsuariosController>
         [HttpGet]
         public IEnumerable<Usuario> Get()
         {
-           var usuarios = conexion.Query<Usuario>("SELECT Nombre FROM Usuario").ToList();
+            var usuarios = conexion.Query<Usuario>("SELECT * FROM Usuario").ToList();
             return usuarios;
         }
 
@@ -37,18 +36,53 @@ namespace GestionTareas.API.Controllers
 
         // POST api/<UsuariosController>
         [HttpPost]
-        public Usuario Post([FromBody]Usuario usuario)
+        public Usuario Post([FromBody] Usuario usuario)
         {
-            conexion.Execute("INSERT INTO Usuario (Nombre,Apellido,Email,Password, TareaId, EquipoId) VALUES (@Nombre,@Apellido,@Email,@Password @TareaId, @EquipoId)", usuario);
-            usuario.Id = conexion.QuerySingle<int>("SELECT SCOPE_IDENTITY()");
+            // Generar Id manualmente - buscar el máximo Id actual y sumar 1
+            var maxId = conexion.QuerySingleOrDefault<int?>("SELECT MAX(Id) FROM Usuario") ?? 0;
+            usuario.Id = maxId + 1;
+
+            // Insertar incluyendo el Id que generamos
+            conexion.Execute(@"
+                INSERT INTO Usuario (Id, Nombre, Apellido, Email, Password, EquipoId, TareaId) 
+                VALUES (@Id, @Nombre, @Apellido, @Email, @Password, @EquipoId, @TareaId)",
+                new
+                {
+                    Id = usuario.Id,
+                    Nombre = usuario.Nombre,
+                    Apellido = usuario.Apellido,
+                    Email = usuario.Email,
+                    Password = usuario.Password,
+                    EquipoId = usuario.EquipoId == 0 ? (int?)null : usuario.EquipoId,
+                    TareaId = usuario.TareaId == 0 ? (int?)null : usuario.TareaId
+                });
+
             return usuario;
         }
 
         // PUT api/<UsuariosController>/5
         [HttpPut("{id}")]
-        public Usuario Put(int id, [FromBody]Usuario usuario)
+        public Usuario Put(int id, [FromBody] Usuario usuario)
         {
-            conexion.Execute("UPDATE Usuario SET Nombre = @Nombre WHERE Id = @Id", new { Nombre = usuario.Nombre, Id = id });
+            conexion.Execute(@"
+                UPDATE Usuario 
+                SET Nombre = @Nombre, 
+                    Apellido = @Apellido, 
+                    Email = @Email, 
+                    Password = @Password, 
+                    EquipoId = @EquipoId, 
+                    TareaId = @TareaId 
+                WHERE Id = @Id",
+                new
+                {
+                    Nombre = usuario.Nombre,
+                    Apellido = usuario.Apellido,
+                    Email = usuario.Email,
+                    Password = usuario.Password,
+                    EquipoId = usuario.EquipoId == 0 ? (int?)null : usuario.EquipoId,
+                    TareaId = usuario.TareaId == 0 ? (int?)null : usuario.TareaId,
+                    Id = id
+                });
             return usuario;
         }
 
@@ -58,5 +92,7 @@ namespace GestionTareas.API.Controllers
         {
             conexion.Execute("DELETE FROM Usuario WHERE Id = @Id", new { Id = id });
         }
+
+       
     }
 }
