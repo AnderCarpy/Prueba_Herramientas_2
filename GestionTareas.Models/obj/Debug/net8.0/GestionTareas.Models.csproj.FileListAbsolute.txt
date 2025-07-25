@@ -1,0 +1,11 @@
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\bin\Debug\net8.0\GestionTareas.Models.deps.json
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\bin\Debug\net8.0\GestionTareas.Models.dll
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\bin\Debug\net8.0\GestionTareas.Models.pdb
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\GestionTareas.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\GestionTareas.Models.AssemblyInfoInputs.cache
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\GestionTareas.Models.AssemblyInfo.cs
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\GestionTareas.Models.csproj.CoreCompileInputs.cache
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\GestionTareas.Models.dll
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\refint\GestionTareas.Models.dll
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\GestionTareas.Models.pdb
+C:\Users\GAMING\Documents\VISUAL STUDIO COMMUNITY\PracticaAdo.net\GestionTareasPrueba\GestionTareas.Models\obj\Debug\net8.0\ref\GestionTareas.Models.dll

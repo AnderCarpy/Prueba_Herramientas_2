@@ -1,0 +1,289 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|solutionrelative:gestiontareas.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|solutionrelative:gestiontareas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.api\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|solutionrelative:gestiontareas.api\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.api\\controllers\\proyectoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|solutionrelative:gestiontareas.api\\controllers\\proyectoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.api\\gestiontareas.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|solutionrelative:gestiontareas.api\\gestiontareas.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA376A6-87E2-4298-9B6C-F7C37806B173}|GestionTareas.Models\\GestionTareas.Models.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.models\\equipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BA376A6-87E2-4298-9B6C-F7C37806B173}|GestionTareas.Models\\GestionTareas.Models.csproj|solutionrelative:gestiontareas.models\\equipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA376A6-87E2-4298-9B6C-F7C37806B173}|GestionTareas.Models\\GestionTareas.Models.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.models\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BA376A6-87E2-4298-9B6C-F7C37806B173}|GestionTareas.Models\\GestionTareas.Models.csproj|solutionrelative:gestiontareas.models\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA376A6-87E2-4298-9B6C-F7C37806B173}|GestionTareas.Models\\GestionTareas.Models.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BA376A6-87E2-4298-9B6C-F7C37806B173}|GestionTareas.Models\\GestionTareas.Models.csproj|solutionrelative:gestiontareas.models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA376A6-87E2-4298-9B6C-F7C37806B173}|GestionTareas.Models\\GestionTareas.Models.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BA376A6-87E2-4298-9B6C-F7C37806B173}|GestionTareas.Models\\GestionTareas.Models.csproj|solutionrelative:gestiontareas.models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|solutionrelative:gestiontareas.api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GAMING\\AppData\\Local\\Temp\\o04ys2lv..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\GAMING\\AppData\\Local\\Temp\\aytfzik1..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|c:\\users\\gaming\\documents\\visual studio community\\practicaado.net\\gestiontareasprueba\\gestiontareas.api\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84E6B068-260D-4026-8B75-3705BC53027B}|GestionTareas.API\\GestionTareas.API.csproj|solutionrelative:gestiontareas.api\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Proyecto.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.Models\\Proyecto.cs",
+              "RelativeDocumentMoniker": "GestionTareas.Models\\Proyecto.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.Models\\Proyecto.cs",
+              "RelativeToolTip": "GestionTareas.Models\\Proyecto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T13:46:49.569Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\Program.cs",
+              "RelativeDocumentMoniker": "GestionTareas.API\\Program.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\Program.cs",
+              "RelativeToolTip": "GestionTareas.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T15:34:43.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProyectosController.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\Controllers\\ProyectosController.cs",
+              "RelativeDocumentMoniker": "GestionTareas.API\\Controllers\\ProyectosController.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\Controllers\\ProyectosController.cs",
+              "RelativeToolTip": "GestionTareas.API\\Controllers\\ProyectosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:00:43.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Tarea.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.Models\\Tarea.cs",
+              "RelativeDocumentMoniker": "GestionTareas.Models\\Tarea.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.Models\\Tarea.cs",
+              "RelativeToolTip": "GestionTareas.Models\\Tarea.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T13:46:24.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Equipo.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.Models\\Equipo.cs",
+              "RelativeDocumentMoniker": "GestionTareas.Models\\Equipo.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.Models\\Equipo.cs",
+              "RelativeToolTip": "GestionTareas.Models\\Equipo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T13:38:19.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\appsettings.json",
+              "RelativeDocumentMoniker": "GestionTareas.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\appsettings.json",
+              "RelativeToolTip": "GestionTareas.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-25T14:00:56.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "GestionTareas.Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.Models\\Usuario.cs",
+              "RelativeToolTip": "GestionTareas.Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T13:23:24.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "o04ys2lv..sql",
+              "DocumentMoniker": "C:\\Users\\GAMING\\AppData\\Local\\Temp\\o04ys2lv..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\o04ys2lv..sql",
+              "ToolTip": "C:\\Users\\GAMING\\AppData\\Local\\Temp\\o04ys2lv..sql",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\o04ys2lv..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-25T14:23:12.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GestionTareas.API.csproj",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\GestionTareas.API.csproj",
+              "RelativeDocumentMoniker": "GestionTareas.API\\GestionTareas.API.csproj",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\GestionTareas.API.csproj",
+              "RelativeToolTip": "GestionTareas.API\\GestionTareas.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-25T15:13:43.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "aytfzik1..sql",
+              "DocumentMoniker": "C:\\Users\\GAMING\\AppData\\Local\\Temp\\aytfzik1..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\aytfzik1..sql",
+              "ToolTip": "C:\\Users\\GAMING\\AppData\\Local\\Temp\\aytfzik1..sql",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\aytfzik1..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-07-25T14:10:18.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "GestionTareas.API\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "GestionTareas.API\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:30:35.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TareasController.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\Controllers\\TareasController.cs",
+              "RelativeDocumentMoniker": "GestionTareas.API\\Controllers\\TareasController.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\Controllers\\TareasController.cs",
+              "RelativeToolTip": "GestionTareas.API\\Controllers\\TareasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T13:59:53.567Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 237,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "b2f7e22c-cb35-4ac2-bfa8-ef5fd14dfe9c",
+        "Display": 0,
+        "X": 959,
+        "Y": 84,
+        "Width": 1146,
+        "Height": 574,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EquiposController.cs",
+              "DocumentMoniker": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\Controllers\\EquiposController.cs",
+              "RelativeDocumentMoniker": "GestionTareas.API\\Controllers\\EquiposController.cs",
+              "ToolTip": "C:\\Users\\GAMING\\Documents\\VISUAL STUDIO COMMUNITY\\PracticaAdo.net\\GestionTareasPrueba\\GestionTareas.API\\Controllers\\EquiposController.cs",
+              "RelativeToolTip": "GestionTareas.API\\Controllers\\EquiposController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T14:00:21.912Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
